@@ -16,7 +16,7 @@ jobs:
         with:
           images: olegstepura/glibc-envsubst
           tags: |
-            type=semver,pattern={{version}}
+            type=ref,event=tag
       - name: Login to DockerHub
         uses: docker/login-action@v1
         with:
