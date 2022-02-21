@@ -1,4 +1,3 @@
-
 FROM debian:bookworm-slim
 
 RUN \
