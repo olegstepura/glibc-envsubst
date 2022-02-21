@@ -1,10 +1,9 @@
 # glibc-envsubst
-Envsubst image compiled against glibc. Idea is to use this as [config management plugin](https://argo-cd.readthedocs.io/en/stable/user-guide/config-management-plugins/)
-in [ArgoCD](https://github.com/argoproj/argo-cd) to post-process Kubernetes manifests replacing ENV variables after running Kustomize.
+Envsubst image compiled against glibc. Idea is to use this as [config management plugin](https://argo-cd.readthedocs.io/en/stable/user-guide/config-management-plugins/) in [ArgoCD](https://github.com/argoproj/argo-cd) to post-process [Kubernetes](https://kubernetes.io/) manifests replacing ENV variables after running [Kustomize](https://kustomize.io/) or [Helm](https://helm.sh/).
 
 ## When this might make sense?
 
-You could prepare your whole git repository from a template using ansible and do some boostrapping including specification
+You could prepare your whole git repository from a template using [ansible](https://github.com/ansible/ansible) and do some bootstrapping including specification
 of some basic variables for the repo. Then there can be a secret created with all vars which can be used to substitute placeholders in your manifests.
 
 Or you have a common variable for the whole repository in a single place (secret) and substitute it automaticaly in every manifest.
