@@ -1,5 +1,8 @@
 # glibc-envsubst
-Envsubst image compiled against glibc. Idea is to use this as [config management plugin](https://argo-cd.readthedocs.io/en/stable/user-guide/config-management-plugins/) in [ArgoCD](https://github.com/argoproj/argo-cd) to post-process [Kubernetes](https://kubernetes.io/) manifests replacing ENV variables after running [Kustomize](https://kustomize.io/) or [Helm](https://helm.sh/).
+Image containing [envsubst](https://www.gnu.org/software/gettext/manual/html_node/envsubst-Invocation.html) compiled against [glibc](https://www.gnu.org/software/libc/) (used by ubuntu/debian images). Idea is to use this as [config management plugin](https://argo-cd.readthedocs.io/en/stable/user-guide/config-management-plugins/) in [ArgoCD](https://github.com/argoproj/argo-cd) to post-process [Kubernetes](https://kubernetes.io/) manifests replacing ENV variables after running [Kustomize](https://kustomize.io/) or [Helm](https://helm.sh/).
+
+## Images at dockerhub
+see https://hub.docker.com/r/olegstepura/glibc-envsubst
 
 ## When this might make sense?
 
